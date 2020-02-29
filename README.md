@@ -1,8 +1,12 @@
 # ASWX1-FW-MOD  
 **Artillery Sidewinder X1 Firmware Mod**  
-   
+  
+<img align="right" width="175" src="https://github.com/MarlinFirmware/Marlin/raw/2.0.x/buildroot/share/pixmaps/logo/marlin-250.png" style="max-width:100%;">
+ 
 The ASWX1-FW-Mod is an optimization for the Artillery Sidewinder X1 3D printer.  
 The Artillery Sidewinder X1 is delivered with Marlin 1.19 [link](http://www.artillery3d.com/DownLoad/15688.html) and deactivated EEPROM memory function (M500).  
+  
+
   
 This optimized firmware is based on [Marlin Firmware Version 2.0.x](https://github.com/MarlinFirmware/Marlin/tree/2.0.x)  
 and on Marlin [Artillery Sidewinder X1 config](https://github.com/MarlinFirmware/Configurations/tree/master/config/examples/Artillery/Sidewinder%20X1)  
