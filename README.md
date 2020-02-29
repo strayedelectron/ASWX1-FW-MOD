@@ -55,7 +55,7 @@ You have to open the printer and unplug the display.
   
 ### 2. Loop method  
 With this method we try to talk to the motherboard before the display is ready to listen.  
-The flash.sh](/flash.sh) script is trying to flash the command in a loop until the command finishs succesfully.  
+The [flash.sh](/flash.sh) script is trying to flash the command in a loop until the command finishs succesfully.  
 Steps:  
 Make sure Artillery Sidewinder X1 is unplugged from the power supply.  
 Unplug USB Cable too.  
