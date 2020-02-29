@@ -18,7 +18,7 @@ There is also an (optimized firmware for Artillery Sidewinder X1 touch display)[
 ## Improvements  
 
 1. **Save to EEPROM**  
-   Enabled EEPROM (M500) to persist settings.  
+   Enabled EEPROM `M500` to persist settings.  
    Now you can store PIDs and Z-Offsets to EEPROM  
 
 2. **LIN_ADVANCE activated**  
