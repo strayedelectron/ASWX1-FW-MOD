@@ -94,5 +94,12 @@ The modified firmware for the Makerbase MKS-TFT 3.2 touch display has been seper
 https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD
   
 
-## Links  
+## Links
+
+### Slicer Machine & Profile Settings
+https://3d-nexus.com/file-archives/category/8-artillery-evnovo
+
+### Youtube
 RICS 3D Marlin 2 https://www.youtube.com/watch?v=JlgykMHhMzw  
+
+
