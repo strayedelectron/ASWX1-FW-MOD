@@ -19,7 +19,7 @@ There is also an [optimized firmware for Artillery Sidewinder X1 touch display](
 
 ## Releases  
 
-**07.03.2020** [ASWX1-FW-MOD-v1.1](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/tag/ASWX1-FW-MOD-v1.1) - [ASWX1-FW-MOD-v1.1.zip](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/download/ASWX1-FW-MOD-v1.0/ASWX1-FW-MOD-v1.1.zip)  based on Marlin 2.0.4.4  
+**07.03.2020** [ASWX1-FW-MOD-v1.1](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/tag/ASWX1-FW-MOD-v1.1) - [ASWX1-FW-MOD-v1.1.zip](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/download/ASWX1-FW-MOD-v1.1/ASWX1-FW-MOD-v1.1.zip)  based on Marlin 2.0.4.4  
 - *fixed the possibility to store Babystepping*  
 - *[Junction Deviation](https://reprap.org/forum/read.php?1,739819) is set to 0.013. This is a nice value for our Sidewinder X1*  
 *To set another value for Junction Deviation, use gcode `M205 J0.013` with your custom JD-value.*  
