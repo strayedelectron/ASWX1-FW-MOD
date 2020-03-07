@@ -34,14 +34,14 @@
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "ASWX1-FW-MOD-v1.2"
+#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "ASWX1-FW-MOD-v1.1"
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-//#define STRING_DISTRIBUTION_DATE "2020-03-05"
+#define STRING_DISTRIBUTION_DATE "2020-03-07"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
