@@ -21,6 +21,7 @@ fi
 
 if [ "${FIRMWARE_HEX##*.}" != "hex" ]; then
   echo "Invalid file extension!"
+  exit
 fi
 
 if [[ ! -e $FIRMWARE_HEX ]]; then
