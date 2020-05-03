@@ -54,19 +54,35 @@ There is also an [optimized firmware for Artillery Sidewinder X1 touch display](
 Individual adjustments can be made in [Configuration.h](/Marlin/Configuration.h) and [Configuration_adv.h](/Marlin/Configuration_adv.h)  
 [Read more about configuring Marlin](https://marlinfw.org/docs/configuration/configuration.html)  
 Of course the firmware must be recompiled than.  
-There are serveral ways to compile.  
+There are serveral ways to compile.
+
+\[Linux / Mac\]  
 An easy one is [platformio CLI](https://docs.platformio.org/en/latest/installation.html#installation-methods) command.  
 To complile you just need execute `platformio run` in the root folder of this repository (where platformio.ini is also located).  
 The new compiled firmware is saved here: .pio/build/megaatmega2560/firmware.hex  
+
+\[Windows\]  
+There is a great instruction how to [use Arduino-IDE on Marlin.org](https://marlinfw.org/docs/basics/install_arduino.html).  
+This should be the easiest way on Windows.  
+  
+Bord: "Arduino/Genuino Mega or Mega 2560"  
+Processor: "ATmega2560 (Mega 2560)"  
+
+Customize your configs, use "Sketchs -> Export compiled Binary", flash
+
   
 ## Flashing  
-The display and the USB-Port are sharing the same wires so flashing the tft firmware need some extra work.  
+**Important**: Don't forget to read and backup your current EEPROM-settings with `M503`!  
+  
+The display and the USB-Port are sharing the same wires so flashing the motherboard-firmware need some extra work.  
 There are two ways possible to flash the firmware.  
   
 ### 1. Disconnect the display  
-You have to open the printer and unplug the display.  
+**be careful, DISCONNECT the 230V power cord, you do not need it for flashing, everything will be savely powered using the USB Connection**  
+Either compile the attached source or flash the precompiled hex file. For flashing the precompiled hex file you can e.g. install and use Prusa Slic3r 2.x. In order to be able to flash the firmware you must unscrew the bottom plate of you printer **(danger, 230V connectors, unplug power cord first)** and disconnect the MKS LCD cable. Otherwise it wont let you flash as both, the TFT and Flasher communicate using serial. After flashing and powering off you simply reconnect the tft+enclosure fan and install the bottom plate again.
+
   
-### 2. Loop method  
+### 2. Loop method (recommended)  
 With this method we try to talk to the motherboard before the display is ready to listen.  
 The [flash.sh](/flash.sh) script is trying to flash the command in a loop until the command finishs succesfully.  
 Steps:  
@@ -81,15 +97,13 @@ Leave flash.sh running and unplug / plug USB Cable or hit the reset button until
   
 ### Reset to factory defaults  
 I recommend to reset the newly flashed firmware to its defaults and overwrite any older settings.  
-The gcode command is `M502` to reset the firmware to the hardcoded defaults,  
+***Don't forget to read your settings by `M503` and copy/save them somewhere.***  
+The gcode command to reset the firmware to the hardcoded defaults is `M502`,  
 followed by `M500` to save these default setting to EEPROM.  
-You can execute the gcode commands using a terminal program (Arduino has one included) or using the Terminal Tab in octoprint.  
-If you have no serial monitor for running the command you could temporary modify mks_config.txt with a text editor, to include the M502/M500 commands in Line 191 to look like this:  
-#SaveToEEPROM >moreitem_button4_cmd:M42 P4 S0;M42 P5 S255;M42 P6 S0;M502;M500;G4 S1;M42 P4 S255;M42 P5 S0;M42 P6 S0;  
-  
-Now, if you press SaveToEEPROM you will reset to factory defaults and save the settings.  
-Everything will get overwritten, so if you already have done PID Tuning you will need to redo this.  
-Do not forget to remove the M502 command after you executed it once, otherwise you will always reset your settings back to defaults and loose PIDs and Z-Offsets.  
+After that you can restore your settings from your M503-Backup e.g. `M92 X80.12 Y80.12 Z399.78 E420.00`  
+Save again by `M500` and finally reload all stored data from Eeprom by `M501`  
+
+You can execute the gcode commands using a terminal program like Arduino-IDE, [Pronterface](https://www.pronterface.com/)) or using the Terminal Tab in Octoprint.    
   
 <br><br><hr>  
 
@@ -106,4 +120,8 @@ https://3d-nexus.com/resources/file-archives/category/8-artillery-evnovo
 
 ### Youtube
 RICS 3D Marlin 2 https://www.youtube.com/watch?v=JlgykMHhMzw  
+  
+<br><br><hr>  
 
+## Disclaimer, use at your own risk!  
+There are inherent dangers of upgrading your firmware and config files. I caution you to make sure that you completely understand the potential risks before applying/uploading any of the files provided to your 3D-Printer. The firmware and Config Files are provided "as is" without warranty of any kind, either express or implied.
