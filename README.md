@@ -55,6 +55,7 @@ Individual adjustments can be made in [Configuration.h](/Marlin/Configuration.h)
 Examples can be found in the links below.  
   
 [Read more about configuring Marlin](https://marlinfw.org/docs/configuration/configuration.html)  
+  
 Of course the firmware must be recompiled than.  
 There are serveral ways to compile.
 
@@ -67,7 +68,7 @@ The new compiled firmware is saved here: .pio/build/megaatmega2560/firmware.hex
 There is a great instruction how to [use Arduino-IDE on Marlin.org](https://marlinfw.org/docs/basics/install_arduino.html).  
 This should be the easiest way on Windows.  
   
-Bord: "Arduino/Genuino Mega or Mega 2560"  
+Board: "Arduino/Genuino Mega or Mega 2560"  
 Processor: "ATmega2560 (Mega 2560)"  
 
 Customize your configs, use "Sketchs -> Export compiled Binary", flash
@@ -84,17 +85,21 @@ There are two ways possible to flash the firmware.
 Either compile the attached source or flash the precompiled hex file. For flashing the precompiled hex file you can e.g. install and use Prusa Slic3r 2.x. In order to be able to flash the firmware you must unscrew the bottom plate of you printer **(danger, 230V connectors, unplug power cord first)** and disconnect the MKS LCD cable. Otherwise it wont let you flash as both, the TFT and Flasher communicate using serial. After flashing and powering off you simply reconnect the tft+enclosure fan and install the bottom plate again.
 
   
-### 2. Loop method (recommended)  
-With this method we try to talk to the motherboard before the display is ready to listen.  
+### 2. Loop method
+With this method we try to talk to the motherboard before the display is ready to listen. 
+You have to use a Linux or Mac mashine for this.
+  
 The [flash.sh](/flash.sh) script is trying to flash the command in a loop until the command finishs succesfully.  
 Steps:  
-Make sure Artillery Sidewinder X1 is unplugged from the power supply.  
-Unplug USB Cable too.  
-Connect your linux box (or mac) with the printer USB-Port  
-Place firmware.hex and flash.sh in same directory and execute flash.sh.  
-You will see timeout errors thats normal.  
-Plug USB Cable  
-Leave flash.sh running and unplug / plug USB Cable or hit the reset button until the flash.sh finishs  
+- Make sure Artillery Sidewinder X1 is unplugged from the power supply.  
+- Unplug USB Cable too.  
+- Connect your linux box (or mac) with the printer USB-Port  
+- Place firmware.hex and flash.sh in same directory and execute flash.sh.  
+- You will see timeout errors thats normal.  
+- Plug USB Cable  
+- Leave flash.sh running and unplug / plug USB Cable or hit the reset button until the flash.sh finishs  
+  
+A detailed explanation of this procedure is available from [joskfg at Github](https://www.thingiverse.com/make:734108/)
   
   
 ### Reset to factory defaults  
