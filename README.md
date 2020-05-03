@@ -52,6 +52,8 @@ There is also an [optimized firmware for Artillery Sidewinder X1 touch display](
 
 ## Individual adjustments  
 Individual adjustments can be made in [Configuration.h](/Marlin/Configuration.h) and [Configuration_adv.h](/Marlin/Configuration_adv.h)  
+Examples can be found in the links below.  
+  
 [Read more about configuring Marlin](https://marlinfw.org/docs/configuration/configuration.html)  
 Of course the firmware must be recompiled than.  
 There are serveral ways to compile.
@@ -105,7 +107,7 @@ Save again by `M500` and finally reload all stored data from Eeprom by `M501`
 
 You can execute the gcode commands using a terminal program like Arduino-IDE, [Pronterface](https://www.pronterface.com/)) or using the Terminal Tab in Octoprint.    
   
-<br><br><hr>  
+<br><hr>  
 
 ## Credits  
 The repository here is the continuation of the MarlinFW from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144).  
@@ -124,8 +126,12 @@ Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
 Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5
+
+### Configurations
+[Enabling BL-Touch](https://5020dafe-17d8-4c4c-bf3b-914a8fdd5140.filesusr.com/ugd/f5a1c8_d40d077cf5c24918bd25b6524f649f11.pdf), also look at [Issue \#6](https://github.com/pinguinpfleger/ASWX1-FW-MOD/issues/6#issuecomment-619517281)  
+[E3D Hemera - Artillery (Evnovo) Sidewinder X1 Firmware Modification](https://e3d-online.dozuki.com/Guide/Hemera+Artillery+(Evnovo)+Sidewinder+X1+Firmware+Modification/121?fbclid=IwAR2BITq4oZrkuaCNYb0VciskU4G2GWVfzusxQzLEnCxz8Fv-EvAqf_lkZS4)  
   
-<br><br><hr>  
+<br><hr>  
 
 ## Disclaimer, use at your own risk!  
 There are inherent dangers of upgrading your firmware and config files. I caution you to make sure that you completely understand the potential risks before applying/uploading any of the files provided to your 3D-Printer. The firmware and Config Files are provided "as is" without warranty of any kind, either express or implied.
