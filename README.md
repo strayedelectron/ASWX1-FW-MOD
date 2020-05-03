@@ -120,6 +120,7 @@ https://3d-nexus.com/resources/file-archives/category/8-artillery-evnovo
 
 ### Youtube
 RICS 3D Marlin 2 https://www.youtube.com/watch?v=JlgykMHhMzw  
+Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
 Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5
