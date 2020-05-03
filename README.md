@@ -52,7 +52,10 @@ There is also an [optimized firmware for Artillery Sidewinder X1 touch display](
 
 ## Individual adjustments  
 Individual adjustments can be made in [Configuration.h](/Marlin/Configuration.h) and [Configuration_adv.h](/Marlin/Configuration_adv.h)  
+  
 Examples can be found in the links below.  
+[Enabling BL-Touch](https://5020dafe-17d8-4c4c-bf3b-914a8fdd5140.filesusr.com/ugd/f5a1c8_d40d077cf5c24918bd25b6524f649f11.pdf), also look at [Issue \#6](https://github.com/pinguinpfleger/ASWX1-FW-MOD/issues/6#issuecomment-619517281)  
+[E3D Hemera - Artillery (Evnovo) Sidewinder X1 Firmware Modification](https://e3d-online.dozuki.com/Guide/Hemera+Artillery+(Evnovo)+Sidewinder+X1+Firmware+Modification/121?fbclid=IwAR2BITq4oZrkuaCNYb0VciskU4G2GWVfzusxQzLEnCxz8Fv-EvAqf_lkZS4) 
   
 [Read more about configuring Marlin](https://marlinfw.org/docs/configuration/configuration.html)  
   
@@ -131,10 +134,6 @@ Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
 Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5
-
-### Configurations
-[Enabling BL-Touch](https://5020dafe-17d8-4c4c-bf3b-914a8fdd5140.filesusr.com/ugd/f5a1c8_d40d077cf5c24918bd25b6524f649f11.pdf), also look at [Issue \#6](https://github.com/pinguinpfleger/ASWX1-FW-MOD/issues/6#issuecomment-619517281)  
-[E3D Hemera - Artillery (Evnovo) Sidewinder X1 Firmware Modification](https://e3d-online.dozuki.com/Guide/Hemera+Artillery+(Evnovo)+Sidewinder+X1+Firmware+Modification/121?fbclid=IwAR2BITq4oZrkuaCNYb0VciskU4G2GWVfzusxQzLEnCxz8Fv-EvAqf_lkZS4)  
   
 <br><hr>  
 
