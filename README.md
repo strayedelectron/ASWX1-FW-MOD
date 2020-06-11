@@ -133,7 +133,8 @@ RICS 3D Marlin 2 https://www.youtube.com/watch?v=JlgykMHhMzw
 Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
-Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5
+Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5  
+3D Nexus (Mesh Bed Leveling) https://3d-nexus.com/resources/file-archives/download/5-printer-firmware/11-artillery-swx1-marlin-1-1-9-advanced-firmware-and-gui
   
 <br><hr>  
 
