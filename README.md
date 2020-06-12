@@ -134,7 +134,7 @@ Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
 Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5  
-3D Nexus (Mesh Bed Leveling, Marlin 1.x) https://3d-nexus.com/resources/file-archives/download/5-printer-firmware/11-artillery-swx1-marlin-1-1-9-advanced-firmware-and-gui
+3D Nexus (Mesh Bed Leveling, Marlin 1.1.x) https://3d-nexus.com/resources/file-archives/download/5-printer-firmware/11-artillery-swx1-marlin-1-1-9-advanced-firmware-and-gui
 3D Print Beginner (also derived from Robscar's firmware) https://3dprintbeginner.com/sidewinder-x1-firmware/
 
 <br><hr>  
