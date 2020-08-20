@@ -15,7 +15,7 @@ and on Marlin [Artillery Sidewinder X1 config](https://github.com/MarlinFirmware
 
 <br>
 
-There is also an [optimized firmware for Artillery Sidewinder X1 touch display](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD) which you can install too but it is optionally.  
+There is also an [optimized firmware for Artillery Sidewinder X1 touch display](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD) which you can install too but it is optional.  
 
 ## Releases  
 **20.03.2020** [ASWX1-FW-MOD-v1.2](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/tag/ASWX1-FW-MOD-v1.2) - [ASWX1-FW-MOD-v1.2.zip](https://github.com/pinguinpfleger/ASWX1-FW-MOD/releases/download/ASWX1-FW-MOD-v1.2/ASWX1-FW-MOD-v1.2.zip)  based on Marlin 2.0.5.1  
@@ -134,8 +134,9 @@ Waggster Mod https://www.youtube.com/watch?v=ynm8inRMVkE
 
 ### Other Mods
 Waggster Mod (BL-Touch) https://pretendprusa.co.uk/index.php?action=downloads;cat=5  
-3D Nexus (Mesh Bed Leveling) https://3d-nexus.com/resources/file-archives/download/5-printer-firmware/11-artillery-swx1-marlin-1-1-9-advanced-firmware-and-gui
-  
+3D Nexus (Mesh Bed Leveling, Marlin 1.1.x) https://3d-nexus.com/resources/file-archives/download/5-printer-firmware/11-artillery-swx1-marlin-1-1-9-advanced-firmware-and-gui
+3D Print Beginner (also derived from Robscar's firmware) https://3dprintbeginner.com/sidewinder-x1-firmware/
+
 <br><hr>  
 
 ## Disclaimer, use at your own risk!  
